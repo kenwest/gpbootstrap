@@ -6559,9 +6559,16 @@ table .checkbox input[type="checkbox"] {
 .alert-danger a {
   color: #953b39;
 }
+/*
+ * The gpb-gallery-image images on the home page are set in a block of class
+ * gpb-image-gallery. There are 5 per row (3 on smaller screens). The foreground
+ * image is either transparent or tinted. The background images are what the
+ * viewer sees, and are the same relative dimensions as the foreground images.
+ */
 .gpb-gallery-image {
   width: 20%;
   float: left;
+  background-size: cover !important;
 }
 .gpb-gallery-image img {
   width: 100%;
