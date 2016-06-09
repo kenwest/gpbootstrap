@@ -6652,13 +6652,26 @@ table .checkbox input[type="checkbox"] {
  * viewer sees, and are the same relative dimensions as the foreground images.
  */
 .gpb-gallery-image {
-  width: 20%;
+  width: 33.3333%;
   float: left;
   background-size: cover !important;
+}
+@media screen and (min-width: 480px) {
+  .gpb-gallery-image {
+    width: 20%;
+  }
 }
 .gpb-gallery-image img {
   width: 100%;
   height: auto;
+}
+.gpb-gallery-image-remnant {
+  display: none;
+}
+@media screen and (min-width: 480px) {
+  .gpb-gallery-image-remnant {
+    display: unset;
+  }
 }
 /*
  * Put node content in a container

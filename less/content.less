@@ -24,13 +24,25 @@
 }
 
 .gpb-gallery-image {
-  width: 20%;
+  // Mobile:
+    width: 33.3333%;
+  @media screen and (min-width: @screen-xs-min) {
+    width: 20%;
+  }
   float: left;
   background-size: cover !important;
 
   img {
     width: 100%;
     height: auto;
+  }
+}
+
+.gpb-gallery-image-remnant {
+  // Mobile:
+    display: none;
+  @media screen and (min-width: @screen-xs-min) {
+    display: unset;
   }
 }
 
