@@ -6563,7 +6563,42 @@ table .checkbox input[type="checkbox"] {
   border-width: 0;
 }
 .navbar-nav {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
   float: right;
+}
+.navbar-nav:before,
+.navbar-nav:after {
+  content: " ";
+  display: table;
+}
+.navbar-nav:after {
+  clear: both;
+}
+.navbar-nav:before,
+.navbar-nav:after {
+  content: " ";
+  display: table;
+}
+.navbar-nav:after {
+  clear: both;
+}
+@media (min-width: 768px) {
+  .navbar-nav {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .navbar-nav {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .navbar-nav {
+    width: 1170px;
+  }
 }
 .navbar-default {
   background: #3d2f8d;
@@ -6624,4 +6659,44 @@ table .checkbox input[type="checkbox"] {
 .gpb-gallery-image img {
   width: 100%;
   height: auto;
+}
+/*
+ * Put node content in a container
+ */
+.node {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.node:before,
+.node:after {
+  content: " ";
+  display: table;
+}
+.node:after {
+  clear: both;
+}
+.node:before,
+.node:after {
+  content: " ";
+  display: table;
+}
+.node:after {
+  clear: both;
+}
+@media (min-width: 768px) {
+  .node {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .node {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .node {
+    width: 1170px;
+  }
 }
