@@ -6568,6 +6568,7 @@ table .checkbox input[type="checkbox"] {
   padding-left: 15px;
   padding-right: 15px;
   float: right;
+  width: auto !important;
 }
 .navbar-nav:before,
 .navbar-nav:after {
