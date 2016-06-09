@@ -2,13 +2,42 @@
   border-width: 0;
 }
 
+.navbar-nav {
+  float: right;
+}
+
+.navbar-default {
+  background: @brand-primary;
+
+  .gpb-container {
+    .navbar-nav {
+      a {
+        color: white;
+      }
+
+      .active {
+        a {
+          color: white;
+          background: inherit;
+        }
+      }
+    }
+  }
+}
+
+.navbar-header {
+  img {
+    width: 200px;
+  }
+}
+
 .navbar-collapse {
   padding: 0;
   max-height: none;
 }
 
 .gpb-header {
-  height: 770px; /* .gpb-header-image height + whitespace to content */
+  height: 780px; /* .gpb-header-image height + whitespace to content */
 }
 
 .gpb-header-image {
