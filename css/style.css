@@ -6580,6 +6580,8 @@ table .checkbox input[type="checkbox"] {
 }
 .navbar-collapse {
   padding: 0;
+  border: 0 none;
+  box-shadow: none;
   max-height: none;
 }
 .gpb-header {
