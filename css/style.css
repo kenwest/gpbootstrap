@@ -6626,7 +6626,8 @@ table .checkbox input[type="checkbox"] {
 
 }
 .gpb-header-image {
-  background: url('../header.jpg');
+  background: url('../header.jpg') 50% 0;
+  background-size: cover;
   height: 720px;
   width: 100%;
 }
@@ -6637,13 +6638,9 @@ table .checkbox input[type="checkbox"] {
   text-transform: uppercase;
 }
 /*
- * On the front page, hide the title of the 'on front-page' content and the
- * 'Read more' links.
+ * On the front page, hide the page header of the 'on front-page' content.
  */
-.front .node > h2 {
-  display: none;
-}
-.front .node-readmore {
+.front .page-header {
   display: none;
 }
 /*
