@@ -6603,6 +6603,7 @@ table .checkbox input[type="checkbox"] {
 }
 .navbar-default {
   background: #3d2f8d;
+  border-radius: 0;
 }
 .navbar-default .gpb-container .navbar-nav a {
   color: white;
