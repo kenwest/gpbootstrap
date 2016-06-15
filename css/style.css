@@ -6779,3 +6779,6 @@ table .checkbox input[type="checkbox"] {
   border-radius: 20px;
   padding: 5px 15px;
 }
+.gpb-container #crm-container div#printer-friendly {
+  display: none;
+}
