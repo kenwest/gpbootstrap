@@ -49,3 +49,48 @@
 .node {
   .container;
 }
+
+/*
+ * Format the event registration page
+ */
+
+.gpb-container {
+  .crm-container {
+    .container;
+
+    background-color: @brand-secondary;
+
+    fieldset {
+      border: 0px;
+
+      legend {
+        font-family: inherit;
+        font-size: 20px;
+      }
+    }
+
+    .label {
+      color: @text-color;
+    }
+
+    input.crm-form-text,
+    input.dateplugin {
+      border: 0px;
+      background-image: none;
+    }
+
+    /* Hide the progress bar */
+
+    .payment {
+      display: none;
+    }
+  }
+
+  #crm-container.crm-public input[type="text"],
+  #crm-container.crm-public input[type="password"],
+  #crm-container.crm-public input[type="email"],
+  #crm-container.crm-public select {
+    border-radius: 20px;
+    padding: 5px 15px;
+  }
+}

@@ -6712,3 +6712,71 @@ table .checkbox input[type="checkbox"] {
     width: 1170px;
   }
 }
+/*
+ * Format the event registration page
+ */
+.gpb-container .crm-container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #e7e7e7;
+  /* Hide the progress bar */
+
+}
+.gpb-container .crm-container:before,
+.gpb-container .crm-container:after {
+  content: " ";
+  display: table;
+}
+.gpb-container .crm-container:after {
+  clear: both;
+}
+.gpb-container .crm-container:before,
+.gpb-container .crm-container:after {
+  content: " ";
+  display: table;
+}
+.gpb-container .crm-container:after {
+  clear: both;
+}
+@media (min-width: 768px) {
+  .gpb-container .crm-container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .gpb-container .crm-container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .gpb-container .crm-container {
+    width: 1170px;
+  }
+}
+.gpb-container .crm-container fieldset {
+  border: 0px;
+}
+.gpb-container .crm-container fieldset legend {
+  font-family: inherit;
+  font-size: 20px;
+}
+.gpb-container .crm-container .label {
+  color: #4f4c4c;
+}
+.gpb-container .crm-container input.crm-form-text,
+.gpb-container .crm-container input.dateplugin {
+  border: 0px;
+  background-image: none;
+}
+.gpb-container .crm-container .payment {
+  display: none;
+}
+.gpb-container #crm-container.crm-public input[type="text"],
+.gpb-container #crm-container.crm-public input[type="password"],
+.gpb-container #crm-container.crm-public input[type="email"],
+.gpb-container #crm-container.crm-public select {
+  border-radius: 20px;
+  padding: 5px 15px;
+}
