@@ -6602,7 +6602,8 @@ table .checkbox input[type="checkbox"] {
   }
 }
 .navbar-default {
-  background: #3d2f8d;
+  background: url('../header.jpg') 50% 0;
+  background-size: cover;
   border-radius: 0;
 }
 .navbar-default .gpb-container .navbar-nav a {
@@ -6611,6 +6612,10 @@ table .checkbox input[type="checkbox"] {
 .navbar-default .gpb-container .navbar-nav .active a {
   color: white;
   background: inherit;
+}
+.navbar-header .logo {
+  margin: 15px;
+  padding: 0;
 }
 .navbar-header img {
   width: 200px;
@@ -6626,14 +6631,8 @@ table .checkbox input[type="checkbox"] {
   /* .gpb-header-image height + whitespace to content */
 
 }
-.gpb-header-image {
-  background: url('../header.jpg') 50% 0;
-  background-size: cover;
-  height: 720px;
-  width: 100%;
-}
 .gpb-header-announcement {
-  margin-top: -600px;
+  margin-top: 180px;
   color: white;
   text-align: center;
   text-transform: uppercase;

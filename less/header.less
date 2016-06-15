@@ -10,7 +10,8 @@
 }
 
 .navbar-default {
-  background: @brand-primary;
+  background: url('../header.jpg') 50% 0;
+  background-size: cover;
 
   border-radius: 0;
 
@@ -31,6 +32,11 @@
 }
 
 .navbar-header {
+  .logo {
+    margin: 15px;
+    padding: 0;
+  }
+
   img {
     width: 200px;
   }
@@ -47,15 +53,8 @@
   height: 780px; /* .gpb-header-image height + whitespace to content */
 }
 
-.gpb-header-image {
-  background: url('../header.jpg') 50% 0;
-  background-size: cover;
-  height: 720px;
-  width: 100%;
-}
-
 .gpb-header-announcement {
-  margin-top: -600px;
+  margin-top: 180px;
   color: white;
   text-align: center;
   text-transform: uppercase;
