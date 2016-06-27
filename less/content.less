@@ -54,29 +54,37 @@
  * Format the event registration page
  */
 
+.page-civicrm {
+  .navbar,
+  .crm-public-footer,
+  .footer {
+    display: none;
+  }
+}
+
 .gpb-container {
   .crm-container {
-    .container;
 
-    background-color: @brand-secondary;
-
-    fieldset {
+    .crm-profile {
       border: 0px;
 
       legend {
         font-family: inherit;
         font-size: 20px;
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    .crm-profile-name-Registration_details,
+    .crm-profile-name-Billing_address_52 {
+      .crm-section {
+        display: inline-block;
       }
     }
 
     .label {
       color: @text-color;
-    }
-
-    input.crm-form-text,
-    input.dateplugin {
-      border: 0px;
-      background-image: none;
     }
 
     /* Hide the progress bar */
