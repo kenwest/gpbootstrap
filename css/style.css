@@ -7029,6 +7029,7 @@ table .checkbox input[type="checkbox"] {
 }
 .gpb-container .price-field-amount,
 .gpb-container .event_info_link-section,
+.gpb-container .tell_friend_link-section,
 .gpb-container .iCal_links-section,
 .gpb-container .crm-socialnetwork {
   display: none;
