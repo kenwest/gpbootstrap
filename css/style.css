@@ -6859,6 +6859,7 @@ table .checkbox input[type="checkbox"] {
   margin-right: 0;
   padding: 0;
   width: 100%;
+  max-width: 100%;
 }
 .gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section .content input,
 .gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section .content input {
