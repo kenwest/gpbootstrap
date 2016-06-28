@@ -6714,18 +6714,36 @@ table .checkbox input[type="checkbox"] {
 /*
  * Format the event registration page
  */
+/* No header or footer as the page is embedded in another site */
 .page-civicrm .navbar,
 .page-civicrm .crm-public-footer,
 .page-civicrm .footer {
   display: none;
 }
 .gpb-container .crm-container {
+  /* Contain the form on wide pages */
+
   /* Hide the progress bar */
 
 }
 .gpb-container .crm-container form {
-  width: 50%;
+  width: 100%;
   margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .gpb-container .crm-container form {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .gpb-container .crm-container form {
+    width: 66%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gpb-container .crm-container form {
+    width: 50%;
+  }
 }
 .gpb-container .crm-container fieldset {
   border: 0px;
@@ -6735,7 +6753,7 @@ table .checkbox input[type="checkbox"] {
   font-size: 20px;
   width: 100%;
   text-align: center;
-  padding: 30px 0 10px 0;
+  padding: 10px;
   margin: 0;
 }
 .gpb-container .crm-container .crm-section .label {
@@ -6843,7 +6861,13 @@ table .checkbox input[type="checkbox"] {
 }
 .gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section .content input,
 .gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section .content input {
-  width: 45%;
+  width: 90%;
+}
+@media screen and (min-width: 480px) {
+  .gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section .content input,
+  .gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section .content input {
+    width: 45%;
+  }
 }
 .gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section.editrow_first_name-section,
 .gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section.editrow_first_name-section,
@@ -6854,18 +6878,31 @@ table .checkbox input[type="checkbox"] {
 .gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section.editrow_state_province-5-section,
 .gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section.editrow_state_province-5-section {
   clear: left;
-  float: left;
-  padding-right: 20px;
+  /* Do nothing */
+
 }
-.gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section.editrow_first_name-section.form-item,
-.gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section.editrow_first_name-section.form-item,
-.gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section.editrow_email-6-section.form-item,
-.gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section.editrow_email-6-section.form-item,
-.gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section.editrow_city-5-section.form-item,
-.gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section.editrow_city-5-section.form-item,
-.gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section.editrow_state_province-5-section.form-item,
-.gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section.editrow_state_province-5-section.form-item {
-  padding-bottom: 0;
+@media screen and (min-width: 480px) {
+  .gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section.editrow_first_name-section,
+  .gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section.editrow_first_name-section,
+  .gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section.editrow_email-6-section,
+  .gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section.editrow_email-6-section,
+  .gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section.editrow_city-5-section,
+  .gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section.editrow_city-5-section,
+  .gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section.editrow_state_province-5-section,
+  .gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section.editrow_state_province-5-section {
+    float: left;
+    padding-right: 20px;
+  }
+  .gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section.editrow_first_name-section.form-item,
+  .gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section.editrow_first_name-section.form-item,
+  .gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section.editrow_email-6-section.form-item,
+  .gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section.editrow_email-6-section.form-item,
+  .gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section.editrow_city-5-section.form-item,
+  .gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section.editrow_city-5-section.form-item,
+  .gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section.editrow_state_province-5-section.form-item,
+  .gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section.editrow_state_province-5-section.form-item {
+    padding-bottom: 0;
+  }
 }
 .gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section.editrow_custom_44-section,
 .gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section.editrow_custom_44-section,
@@ -6878,49 +6915,114 @@ table .checkbox input[type="checkbox"] {
   clear: left;
 }
 .gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section.editrow_first_name-section,
-.gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section.editrow_first_name-section,
-.gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section.editrow_state_province-5-section,
-.gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section.editrow_state_province-5-section {
-  width: 49%;
-  /* Round down for Chrome*/
+.gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section.editrow_first_name-section {
+  /* Do nothing */
 
 }
-.gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section.editrow_first_name-section input,
-.gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section.editrow_first_name-section input,
-.gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section.editrow_state_province-5-section input,
-.gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section.editrow_state_province-5-section input {
-  width: 90%;
+@media screen and (min-width: 480px) {
+  .gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section.editrow_first_name-section,
+  .gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section.editrow_first_name-section {
+    width: 44%;
+    /* Round down for Chrome */
+  
+  }
+  .gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section.editrow_first_name-section input,
+  .gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section.editrow_first_name-section input {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section.editrow_first_name-section,
+  .gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section.editrow_first_name-section {
+    width: 49%;
+    /* Round down for Chrome */
+  
+  }
 }
 .gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section.editrow_email-6-section,
 .gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section.editrow_email-6-section,
 .gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section.editrow_city-5-section,
 .gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section.editrow_city-5-section {
-  width: 69%;
-  /* Round down for Chrome*/
+  /* Do nothing */
 
 }
-.gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section.editrow_email-6-section input,
-.gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section.editrow_email-6-section input,
-.gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section.editrow_city-5-section input,
-.gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section.editrow_city-5-section input {
-  width: 90%;
+@media screen and (min-width: 480px) {
+  .gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section.editrow_email-6-section,
+  .gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section.editrow_email-6-section,
+  .gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section.editrow_city-5-section,
+  .gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section.editrow_city-5-section {
+    width: 64%;
+    /* Round down for Chrome */
+  
+  }
+  .gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section.editrow_email-6-section input,
+  .gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section.editrow_email-6-section input,
+  .gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section.editrow_city-5-section input,
+  .gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section.editrow_city-5-section input {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section.editrow_email-6-section,
+  .gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section.editrow_email-6-section,
+  .gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section.editrow_city-5-section,
+  .gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section.editrow_city-5-section {
+    width: 69%;
+    /* Round down for Chrome */
+  
+  }
 }
 .gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section.editrow_phone-6-2-section input,
 .gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section.editrow_phone-6-2-section input,
 .gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section.editrow_postal_code-5-section input,
 .gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section.editrow_postal_code-5-section input {
-  width: 25%;
+  /* Do nothing */
+
+}
+@media screen and (min-width: 480px) {
+  .gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section.editrow_phone-6-2-section input,
+  .gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section.editrow_phone-6-2-section input,
+  .gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section.editrow_postal_code-5-section input,
+  .gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section.editrow_postal_code-5-section input {
+    width: 25%;
+  }
 }
 .gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section.editrow_custom_44-section input,
 .gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section.editrow_custom_44-section input,
-.gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section.helprow-custom_44-section input,
-.gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section.helprow-custom_44-section input,
 .gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section.editrow_street_address-5-section input,
 .gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section.editrow_street_address-5-section input,
 .gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section.editrow_supplemental_address_1-5-section input,
 .gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section.editrow_supplemental_address_1-5-section input {
-  width: 94%;
-  /* Round down for Chrome*/
+  /* Do nothing */
+
+}
+@media screen and (min-width: 480px) {
+  .gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section.editrow_custom_44-section input,
+  .gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section.editrow_custom_44-section input,
+  .gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section.editrow_street_address-5-section input,
+  .gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section.editrow_street_address-5-section input,
+  .gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section.editrow_supplemental_address_1-5-section input,
+  .gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section.editrow_supplemental_address_1-5-section input {
+    width: 89%;
+    /* Round down for Chrome */
+  
+  }
+}
+@media screen and (min-width: 768px) {
+  .gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section.editrow_custom_44-section input,
+  .gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section.editrow_custom_44-section input,
+  .gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section.editrow_street_address-5-section input,
+  .gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section.editrow_street_address-5-section input,
+  .gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section.editrow_supplemental_address_1-5-section input,
+  .gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section.editrow_supplemental_address_1-5-section input {
+    width: 94%;
+    /* Round down for Chrome */
+  
+  }
+}
+.gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section.helprow-post,
+.gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section.helprow-post {
+  display: none;
 }
 .gpb-container #crm-container div#printer-friendly {
   display: none;

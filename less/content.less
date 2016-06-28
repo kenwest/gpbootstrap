@@ -54,6 +54,7 @@
  * Format the event registration page
  */
 
+/* No header or footer as the page is embedded in another site */
 .page-civicrm {
   .navbar,
   .crm-public-footer,
@@ -65,8 +66,20 @@
 .gpb-container {
   .crm-container {
 
+    /* Contain the form on wide pages */
     form {
-      width: 50%;
+      // Mobile
+        width: 100%;
+      @media @tablet {
+        width: 80%;
+      }
+      @media @normal {
+        width: 66%;
+      }
+      @media @wide {
+        width: 50%;
+      }
+
       margin: 0 auto;
     }
 
@@ -78,7 +91,7 @@
         font-size: 20px;
         width: 100%;
         text-align: center;
-        padding: 30px 0 10px 0;
+        padding: 10px;
         margin: 0;
       }
     }
@@ -129,7 +142,6 @@
     }
   }
 
-
   #crm-container.crm-public {
     input[type="text"],
     input[type="password"],
@@ -168,7 +180,11 @@
           width: 100%;
 
           input {
-            width: 45%;
+            // Mobile:
+              width: 90%;
+            @media screen and (min-width: @screen-xs-min) {
+              width: 45%;
+            }
           }
         }
 
@@ -178,11 +194,16 @@
         &.editrow_city-5-section,
         &.editrow_state_province-5-section {
           clear: left;
-          float: left;
-          padding-right: 20px;
 
-          &.form-item {
-            padding-bottom: 0;
+          // Mobile:
+            /* Do nothing */
+          @media screen and (min-width: @screen-xs-min) {
+            float: left;
+            padding-right: 20px;
+
+            &.form-item {
+              padding-bottom: 0;
+            }
           }
         }
 
@@ -195,22 +216,35 @@
         }
 
         /* Inputs which float to the left of others on a large screen, and are 50% wide */
-        &.editrow_first_name-section,
-        &.editrow_state_province-5-section {
-          width: 49%; /* Round down for Chrome*/
+        &.editrow_first_name-section {
+          // Mobile:
+            /* Do nothing */
+          @media screen and (min-width: @screen-xs-min) {
+            width: 44%; /* Round down for Chrome */
 
-          input {
-            width: 90%;
+            input {
+              width: 90%;
+            }
+          }
+          @media @tablet {
+            width: 49%; /* Round down for Chrome */
           }
         }
 
         /* Inputs which float to the left of others on a large screen, and are 70% wide */
         &.editrow_email-6-section,
         &.editrow_city-5-section {
-          width: 69%; /* Round down for Chrome*/
+          // Mobile:
+            /* Do nothing */
+          @media screen and (min-width: @screen-xs-min) {
+            width: 64%; /* Round down for Chrome */
 
-          input {
-            width: 90%;
+            input {
+              width: 90%;
+            }
+          }
+          @media @tablet {
+            width: 69%; /* Round down for Chrome */
           }
         }
 
@@ -218,17 +252,32 @@
         &.editrow_phone-6-2-section,
         &.editrow_postal_code-5-section {
           input {
-            width: 25%;
+            // Mobile:
+              /* Do nothing */
+            @media screen and (min-width: @screen-xs-min) {
+              width: 25%;
+            }
           }
         }
 
         /* Inputs which take a whole row */
         &.editrow_custom_44-section,
-        &.helprow-custom_44-section,
         &.editrow_street_address-5-section,
         &.editrow_supplemental_address_1-5-section {
           input {
-            width: 94%; /* Round down for Chrome*/          }
+            // Mobile:
+              /* Do nothing */
+            @media screen and (min-width: @screen-xs-min) {
+              width: 89%; /* Round down for Chrome */
+            }
+            @media @tablet {
+              width: 94%; /* Round down for Chrome */
+            }
+          }
+        }
+
+        &.helprow-post {
+          display: none;
         }
       }
     }
