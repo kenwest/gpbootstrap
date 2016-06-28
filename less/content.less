@@ -129,6 +129,7 @@
     }
   }
 
+
   #crm-container.crm-public {
     input[type="text"],
     input[type="password"],
@@ -137,6 +138,11 @@
     span.crm-button {
       border-radius: 20px;
       padding: 5px 15px;
+    }
+
+    .calc-value,
+    .content {
+      padding-bottom: 14px; /* Since padding-top -s 6px, the total is 20px */
     }
 
     .crm-profile-name-Registration_details,
@@ -228,7 +234,11 @@
     }
   }
 
-  #crm-container div#printer-friendly,
+  #crm-container div#printer-friendly {
+    display: none;
+  }
+
+  .price-field-amount,
   .event_info_link-section,
   .iCal_links-section,
   .crm-socialnetwork {
