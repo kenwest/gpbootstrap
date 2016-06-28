@@ -21,7 +21,7 @@ function gpbootstrap_add_placeholders_to_inputs($rendered) {
     'phone-6-2' => 'Mobile *',
     'custom_44' => 'Additional information, eg names of guests, dietary requirements',
     'street_address-5' => 'Street address *',
-  	'supplemental_address_1-5' => 'Additional address',
+  	'supplemental_address_1-5' => 'Additional address, eg level, unit, company name',
     'city-5' => 'Suburb *',
     'postal_code-5' => 'Postcode *',
   );
