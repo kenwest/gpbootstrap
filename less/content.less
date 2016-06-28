@@ -147,7 +147,7 @@
 
       div.form-item {
         padding-top: 0;
-        padding-bottom: 10px;
+        padding-bottom: 20px;
       }
 
       .crm-section {
@@ -173,11 +173,10 @@
         &.editrow_state_province-5-section {
           clear: left;
           float: left;
-          width: 50%;
           padding-right: 20px;
 
-          input {
-            width: 90%;
+          &.form-item {
+            padding-bottom: 0;
           }
         }
 
@@ -187,7 +186,41 @@
         &.editrow_street_address-5-section,
         &.editrow_supplemental_address_1-5-section {
           clear: left;
- 
+        }
+
+        /* Inputs which float to the left of others on a large screen, and are 50% wide */
+        &.editrow_first_name-section,
+        &.editrow_state_province-5-section {
+          width: 50%;
+
+          input {
+            width: 90%;
+          }
+        }
+
+        /* Inputs which float to the left of others on a large screen, and are 70% wide */
+        &.editrow_email-6-section,
+        &.editrow_city-5-section {
+          width: 70%;
+
+          input {
+            width: 90%;
+          }
+        }
+
+        /* Inputs which 30% wide */
+        &.editrow_phone-6-2-section,
+        &.editrow_postal_code-5-section {
+          input {
+            width: 25%;
+          }
+        }
+
+        /* Inputs which take a whole row */
+        &.editrow_custom_44-section,
+        &.helprow-custom_44-section,
+        &.editrow_street_address-5-section,
+        &.editrow_supplemental_address_1-5-section {
           input {
             width: 95%;
           }
