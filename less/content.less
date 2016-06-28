@@ -65,26 +65,29 @@
 .gpb-container {
   .crm-container {
 
-    .crm-profile {
+    fieldset {
       border: 0px;
+      width: 50%;
+      margin: 0 auto;
 
       legend {
         font-family: inherit;
         font-size: 20px;
         width: 100%;
         text-align: center;
+        margin: 30px 0 10px 0;
       }
     }
 
-    .crm-profile-name-Registration_details,
-    .crm-profile-name-Billing_address_52 {
-      .crm-section {
-        display: inline-block;
+    .crm-section {
+      .label {
+        color: @text-color;
+        width: 35%;
       }
-    }
 
-    .label {
-      color: @text-color;
+      .content {
+        margin-left: 40%;
+      }
     }
 
     /* Hide the progress bar */
@@ -92,14 +95,80 @@
     .payment {
       display: none;
     }
+
+    .crm-submit-buttons {
+      display: inline-block;
+    }
+
+    span.crm-button {
+      float: none !important;
+      width: 150px;
+      margin: 10px auto;
+
+      .crm-i {
+        left: 0.9em;
+        top: 0.5em;
+      }
+    }
+
+    a.button,
+    a.button:link,
+    a.button:visited,
+    input.crm-form-submit,
+    .ui-dialog-buttonset .ui-button,
+    input[type="button"],
+    .crm-button {
+      background: @brand-secondary;
+      color: @text-color;
+      text-shadow: none;
+      font-size: 15px;
+      font-weight: bold;
+    }
   }
 
-  #crm-container.crm-public input[type="text"],
-  #crm-container.crm-public input[type="password"],
-  #crm-container.crm-public input[type="email"],
-  #crm-container.crm-public select {
-    border-radius: 20px;
-    padding: 5px 15px;
+  #crm-container.crm-public {
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    select,
+    span.crm-button {
+      border-radius: 20px;
+      padding: 5px 15px;
+    }
+
+    .crm-profile-name-Registration_details,
+    .crm-profile-name-Billing_address_52 {
+      .label {
+        display: none;
+      }
+
+      .crm-section {
+        .clearfix();
+        clear: none;
+
+        .content {
+          margin-left: 0;
+          margin-right: 20px;
+        }
+      }
+
+      /* Inputs which float to the left of others on a large screen */
+      .editrow_first_name-section,
+      .editrow_email-6-section,
+      .editrow_city-5-section,
+      .editrow_state_province-5-section {
+        clear: left;
+        float: left;
+      }
+
+      /* Inputs which take a whole row */
+      .editrow_custom_44-section,
+      .helprow-custom_44-section,
+      .editrow_street_address-5-section,
+      .editrow_supplemental_address_1-5-section {
+        clear: left;
+      }
+    }
   }
 
   #crm-container div#printer-friendly {

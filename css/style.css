@@ -6723,31 +6723,123 @@ table .checkbox input[type="checkbox"] {
   /* Hide the progress bar */
 
 }
-.gpb-container .crm-container .crm-profile {
+.gpb-container .crm-container fieldset {
   border: 0px;
+  width: 50%;
+  margin: 0 auto;
 }
-.gpb-container .crm-container .crm-profile legend {
+.gpb-container .crm-container fieldset legend {
   font-family: inherit;
   font-size: 20px;
   width: 100%;
   text-align: center;
+  margin: 30px 0 10px 0;
 }
-.gpb-container .crm-container .crm-profile-name-Registration_details .crm-section,
-.gpb-container .crm-container .crm-profile-name-Billing_address_52 .crm-section {
-  display: inline-block;
-}
-.gpb-container .crm-container .label {
+.gpb-container .crm-container .crm-section .label {
   color: #4f4c4c;
+  width: 35%;
+}
+.gpb-container .crm-container .crm-section .content {
+  margin-left: 40%;
 }
 .gpb-container .crm-container .payment {
   display: none;
 }
+.gpb-container .crm-container .crm-submit-buttons {
+  display: inline-block;
+}
+.gpb-container .crm-container span.crm-button {
+  float: none !important;
+  width: 150px;
+  margin: 10px auto;
+}
+.gpb-container .crm-container span.crm-button .crm-i {
+  left: 0.9em;
+  top: 0.5em;
+}
+.gpb-container .crm-container a.button,
+.gpb-container .crm-container a.button:link,
+.gpb-container .crm-container a.button:visited,
+.gpb-container .crm-container input.crm-form-submit,
+.gpb-container .crm-container .ui-dialog-buttonset .ui-button,
+.gpb-container .crm-container input[type="button"],
+.gpb-container .crm-container .crm-button {
+  background: #e7e7e7;
+  color: #4f4c4c;
+  text-shadow: none;
+  font-size: 15px;
+  font-weight: bold;
+}
 .gpb-container #crm-container.crm-public input[type="text"],
 .gpb-container #crm-container.crm-public input[type="password"],
 .gpb-container #crm-container.crm-public input[type="email"],
-.gpb-container #crm-container.crm-public select {
+.gpb-container #crm-container.crm-public select,
+.gpb-container #crm-container.crm-public span.crm-button {
   border-radius: 20px;
   padding: 5px 15px;
+}
+.gpb-container #crm-container.crm-public .crm-profile-name-Registration_details,
+.gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 {
+  /* Inputs which float to the left of others on a large screen */
+
+  /* Inputs which take a whole row */
+
+}
+.gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .label,
+.gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .label {
+  display: none;
+}
+.gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section,
+.gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section {
+  clear: none;
+}
+.gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section:before,
+.gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section:before,
+.gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section:after,
+.gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section:after {
+  content: " ";
+  display: table;
+}
+.gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section:after,
+.gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section:after {
+  clear: both;
+}
+.gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section:before,
+.gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section:before,
+.gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section:after,
+.gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section:after {
+  content: " ";
+  display: table;
+}
+.gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section:after,
+.gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section:after {
+  clear: both;
+}
+.gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section .content,
+.gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section .content {
+  margin-left: 0;
+  margin-right: 20px;
+}
+.gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .editrow_first_name-section,
+.gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .editrow_first_name-section,
+.gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .editrow_email-6-section,
+.gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .editrow_email-6-section,
+.gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .editrow_city-5-section,
+.gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .editrow_city-5-section,
+.gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .editrow_state_province-5-section,
+.gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .editrow_state_province-5-section {
+  clear: left;
+  float: left;
+}
+.gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .editrow_custom_44-section,
+.gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .editrow_custom_44-section,
+.gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .helprow-custom_44-section,
+.gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .helprow-custom_44-section,
+.gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .editrow_street_address-5-section,
+.gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .editrow_street_address-5-section,
+.gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .editrow_supplemental_address_1-5-section,
+.gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .editrow_supplemental_address_1-5-section {
+  clear: left;
 }
 .gpb-container #crm-container div#printer-friendly {
   display: none;
