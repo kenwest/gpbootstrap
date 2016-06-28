@@ -6723,10 +6723,12 @@ table .checkbox input[type="checkbox"] {
   /* Hide the progress bar */
 
 }
-.gpb-container .crm-container fieldset {
-  border: 0px;
+.gpb-container .crm-container form {
   width: 50%;
   margin: 0 auto;
+}
+.gpb-container .crm-container fieldset {
+  border: 0px;
 }
 .gpb-container .crm-container fieldset legend {
   font-family: inherit;
@@ -6790,6 +6792,10 @@ table .checkbox input[type="checkbox"] {
 .gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .label {
   display: none;
 }
+.gpb-container #crm-container.crm-public .crm-profile-name-Registration_details div.form-item,
+.gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 div.form-item {
+  padding: 0 0 10px;
+}
 .gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section,
 .gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section {
   clear: none;
@@ -6820,6 +6826,7 @@ table .checkbox input[type="checkbox"] {
 .gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section .content {
   margin-left: 0;
   margin-right: 20px;
+  padding: 0;
 }
 .gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .editrow_first_name-section,
 .gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .editrow_first_name-section,
@@ -6842,6 +6849,13 @@ table .checkbox input[type="checkbox"] {
 .gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .editrow_supplemental_address_1-5-section {
   clear: left;
 }
-.gpb-container #crm-container div#printer-friendly {
+.gpb-container #crm-container div#printer-friendly,
+.gpb-container .event_info_link-section,
+.gpb-container .iCal_links-section,
+.gpb-container .crm-socialnetwork {
+  display: none;
+}
+.gpb-container .crm-event-confirm-form-block .event_info-group a,
+.gpb-container .crm-event-thankyou-form-block .event_info-group a {
   display: none;
 }
