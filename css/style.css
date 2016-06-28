@@ -6762,6 +6762,7 @@ table .checkbox input[type="checkbox"] {
 }
 .gpb-container .crm-container .crm-section .content {
   margin-left: 40%;
+  max-width: 45%;
 }
 .gpb-container .crm-container .payment {
   display: none;
@@ -7023,6 +7024,9 @@ table .checkbox input[type="checkbox"] {
 .gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section.helprow-post,
 .gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section.helprow-post {
   display: none;
+}
+.gpb-container .credit_card_exp_date-section select {
+  margin-bottom: 5px;
 }
 .gpb-container #crm-container div#printer-friendly {
   display: none;
