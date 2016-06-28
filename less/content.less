@@ -191,7 +191,7 @@
         /* Inputs which float to the left of others on a large screen, and are 50% wide */
         &.editrow_first_name-section,
         &.editrow_state_province-5-section {
-          width: 50%;
+          width: 49%; /* Round down for Chrome*/
 
           input {
             width: 90%;
@@ -201,7 +201,7 @@
         /* Inputs which float to the left of others on a large screen, and are 70% wide */
         &.editrow_email-6-section,
         &.editrow_city-5-section {
-          width: 70%;
+          width: 69%; /* Round down for Chrome*/
 
           input {
             width: 90%;
@@ -222,8 +222,7 @@
         &.editrow_street_address-5-section,
         &.editrow_supplemental_address_1-5-section {
           input {
-            width: 95%;
-          }
+            width: 94%; /* Round down for Chrome*/          }
         }
       }
     }

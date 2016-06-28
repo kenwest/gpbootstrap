@@ -6875,7 +6875,9 @@ table .checkbox input[type="checkbox"] {
 .gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section.editrow_first_name-section,
 .gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section.editrow_state_province-5-section,
 .gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section.editrow_state_province-5-section {
-  width: 50%;
+  width: 49%;
+  /* Round down for Chrome*/
+
 }
 .gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section.editrow_first_name-section input,
 .gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section.editrow_first_name-section input,
@@ -6887,7 +6889,9 @@ table .checkbox input[type="checkbox"] {
 .gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section.editrow_email-6-section,
 .gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section.editrow_city-5-section,
 .gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section.editrow_city-5-section {
-  width: 70%;
+  width: 69%;
+  /* Round down for Chrome*/
+
 }
 .gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section.editrow_email-6-section input,
 .gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section.editrow_email-6-section input,
@@ -6909,7 +6913,8 @@ table .checkbox input[type="checkbox"] {
 .gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section.editrow_street_address-5-section input,
 .gpb-container #crm-container.crm-public .crm-profile-name-Registration_details .crm-section.editrow_supplemental_address_1-5-section input,
 .gpb-container #crm-container.crm-public .crm-profile-name-Billing_address_52 .crm-section.editrow_supplemental_address_1-5-section input {
-  width: 95%;
+  width: 94%;
+  /* Round down for Chrome*/
 }
 .gpb-container #crm-container div#printer-friendly,
 .gpb-container .event_info_link-section,
