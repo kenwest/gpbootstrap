@@ -115,12 +115,14 @@
 
     .crm-submit-buttons {
       display: inline-block;
+      text-align: center;
     }
 
     span.crm-button {
+      display: inline;
       float: none !important;
       width: 150px;
-      margin: 10px auto;
+      margin: 10px;
 
       .crm-i {
         left: 0.9em;
@@ -131,15 +133,38 @@
     a.button,
     a.button:link,
     a.button:visited,
-    input.crm-form-submit,
     .ui-dialog-buttonset .ui-button,
-    input[type="button"],
+    input[type="button"] {
+      background: none;
+      color: @text-color;
+      text-shadow: none;
+      font-size: 15px;
+      font-weight: bold;
+    }
+
     .crm-button {
       background: @brand-secondary;
       color: @text-color;
       text-shadow: none;
       font-size: 15px;
       font-weight: bold;
+
+      input {
+        text-shadow: none;
+        font-size: 15px;
+        font-weight: bold;
+      }
+
+      &.crm-button-type-upload,
+      &.crm-button-type-next {
+        background: @brand-success;
+        color: white;
+      }
+
+      &.crm-button-type-back {
+        background: @brand-danger;
+        color: white;
+      }
     }
   }
 

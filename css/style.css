@@ -6769,11 +6769,13 @@ table .checkbox input[type="checkbox"] {
 }
 .gpb-container .crm-container .crm-submit-buttons {
   display: inline-block;
+  text-align: center;
 }
 .gpb-container .crm-container span.crm-button {
+  display: inline;
   float: none !important;
   width: 150px;
-  margin: 10px auto;
+  margin: 10px;
 }
 .gpb-container .crm-container span.crm-button .crm-i {
   left: 0.9em;
@@ -6782,15 +6784,34 @@ table .checkbox input[type="checkbox"] {
 .gpb-container .crm-container a.button,
 .gpb-container .crm-container a.button:link,
 .gpb-container .crm-container a.button:visited,
-.gpb-container .crm-container input.crm-form-submit,
 .gpb-container .crm-container .ui-dialog-buttonset .ui-button,
-.gpb-container .crm-container input[type="button"],
+.gpb-container .crm-container input[type="button"] {
+  background: none;
+  color: #4f4c4c;
+  text-shadow: none;
+  font-size: 15px;
+  font-weight: bold;
+}
 .gpb-container .crm-container .crm-button {
   background: #e7e7e7;
   color: #4f4c4c;
   text-shadow: none;
   font-size: 15px;
   font-weight: bold;
+}
+.gpb-container .crm-container .crm-button input {
+  text-shadow: none;
+  font-size: 15px;
+  font-weight: bold;
+}
+.gpb-container .crm-container .crm-button.crm-button-type-upload,
+.gpb-container .crm-container .crm-button.crm-button-type-next {
+  background: #5cb85c;
+  color: white;
+}
+.gpb-container .crm-container .crm-button.crm-button-type-back {
+  background: #d9534f;
+  color: white;
 }
 .gpb-container #crm-container.crm-public input[type="text"],
 .gpb-container #crm-container.crm-public input[type="password"],
