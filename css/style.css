@@ -6772,7 +6772,7 @@ table .checkbox input[type="checkbox"] {
   text-align: center;
 }
 .gpb-container .crm-container span.crm-button {
-  display: inline;
+  display: inline-block;
   float: none !important;
   width: 150px;
   margin: 10px;
