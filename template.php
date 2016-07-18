@@ -1,4 +1,14 @@
 <?php
+/**
+ * Prior to HTML processing
+ */
+function gpbootstrap_preprocess_html(&$variables, $hook) {
+  /*
+   * Add a P3P header so IE respects us when a page is embedded in an IFRAME
+   * See http://labs.fundbox.com/third-party-cookies-with-ie-at-2am/
+   */
+  drupal_add_http_header('P3P', 'CP="POTATO"');
+}
 
 /**
  * Add placeholders to input elements
