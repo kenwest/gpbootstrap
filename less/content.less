@@ -63,25 +63,87 @@
   }
 }
 
+/* Contain the form on wide pages */
+.gpb-container .crm-container form,
+.gpb-cookie-permissions {
+  // Mobile
+    width: 100%;
+  @media @tablet {
+    width: 80%;
+  }
+  @media @normal {
+    width: 66%;
+  }
+  @media @wide {
+    width: 50%;
+  }
+
+  margin: 0 auto;
+}
+
+.gpb-cookie-permissions {
+  height: 1550px;
+
+  .gpb-cookie-description {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .gpb-cookie-button-area {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+
+    .gpb-cookie-button {
+      display: inline-block;
+      float: none !important;
+      margin: 10px;
+      width: 150px;
+      border: 1px solid #3e3e3e;
+      border-radius: 20px;
+      padding: 5px 15px;
+      background: @brand-success none repeat scroll 0 0;
+      color: white;
+      font-size: 15px;
+      font-weight: bold;
+      text-shadow: none;
+      cursor: pointer;
+      text-decoration: none;
+
+      i {
+        display: block;
+        position: absolute;
+        font-family: FontAwesome;
+        font-feature-settings: normal;
+        font-kerning: auto;
+        font-language-override: normal;
+        font-size: inherit;
+        font-size-adjust: none;
+        font-stretch: normal;
+        font-style: normal;
+        font-synthesis: weight style;
+        font-variant: normal;
+        font-weight: normal;
+        line-height: 1;
+        text-rendering: auto;
+        transform: translate(0px, 0px);
+      }
+
+      .gpb-cookie-accept {
+        padding-left: 1.6em;
+
+      }
+    }
+  }
+}
+
+.gpb-cookie-hidden {
+  display: none;
+}
+
 .gpb-container {
   .crm-container {
-
-    /* Contain the form on wide pages */
-    form {
-      // Mobile
-        width: 100%;
-      @media @tablet {
-        width: 80%;
-      }
-      @media @normal {
-        width: 66%;
-      }
-      @media @wide {
-        width: 50%;
-      }
-
-      margin: 0 auto;
-    }
 
     fieldset {
       border: 0px;
