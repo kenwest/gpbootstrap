@@ -66,7 +66,7 @@ function gpbootstrap_update_civicrm_event_registration_page($rendered) {
     If you have technical issues with this form, you can register at the ' .
     '<a style="display: inline-block;" href="https://citybibleforum.org' .
     request_uri() .
-    '"><strong>City Bible Forum</strong></a> site.
+    '" target="_blank"><strong>City Bible Forum</strong></a> site.
   </div>
 </div>
 
