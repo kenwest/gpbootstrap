@@ -2,3 +2,5 @@
 bootstrap/*
 !bootstrap/fonts/
 !bootstrap/js/
+!bootstrap/less/
+bootstrap/js/tests/*
